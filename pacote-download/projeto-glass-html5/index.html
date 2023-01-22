@@ -5,21 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
-    <style>
-        body{
-            background-color: greenyellow;
-            color: red;
-        }
-        /* Comentário em CSS */
-        /*background-color encima está definindo o fundo do site pra verde claro*/
-        /*background-image: url("NomeDoArquivo.jpg"); = serve pra adicionar o fundo sendo o arquivo. Note que o arquivo precisa estar na mesma área do index*/
-        /*color está defindo a cor da letra pra vermelhor */
-        /*A cor pode ser escrita normalmente ( yellow, green, etc ), hexadecimal ( Ex : #a1d3ef ou a1 é a parte vermelha, d3 parte verde e ef parte azul), rgb(35, 137, 195) , rgba (0,0,0,0) onde o último 0 é transparência pode ser 0 até 1, hsl(M, S%, L%) = MatizSaturaçãoLuminosidade*, hsla ( M, S%, L%, A) onde A é Alpha/
-        p{
-            text-align: justify;
-            text-indent: 50px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <!--Aqui ele está referindo a stylesheet ( Folhas de Estilo ) do typo Texto chamando arquivo estilo.css-->
+    <!--O estilo da página está agora na pasta _css/estilo.css-->
 </head>
 
 <body>
@@ -35,7 +23,11 @@
 
     <img src="_imagens/glass-oculos-preto-peq.png"/>
     <!--img src = Aqui estamos dizendo onde está a imagem que iremos colocar e qual o nome dela-->
-    [AQUI ENTRA UMA FOTO]
+    <!--img src = "Local da foto e nome width 200" = Isso coloca a imagem em 200-->
+    <!--Note que diminuir uma imagem pelo HMTLC não significa que ela será menor pro usuário-->
+    <!--Para diminuir você deve redimensionar ela através de Editores : Photoshop, Gimp-->
+    <!--Sempre salve como arquivo para WEB-->
+    <!--Use a opção JPEG pois ela é menor-->
 
 Menu Principal
 - Home
@@ -122,6 +114,16 @@ int main() {
 <!--<span style="font-weight:900;></span> = Muito Negrito  -->
 
 [AQUI ENTRA UMA FOTO]
+
+<figure class="foto-legenda">
+<!--Isso serve pro google achar suas imagens, nova marcação de foto-->
+    <img src="_imagens/glass-quadro-homem-mulhermenor.jpg">
+    <figcaption>
+    <!--Comando de Legenda-->
+        <h3>Google Glass</h3>
+        <p>Uma nova maneira de ver o mundo</p>
+    </figcaption>
+</figure>
 
 <h2>Data de lançamento</h2>
 <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
