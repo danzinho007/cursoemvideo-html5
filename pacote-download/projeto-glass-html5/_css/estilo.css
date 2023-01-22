@@ -1,0 +1,24 @@
+@charset "UTF-8" ;
+/*Isso é pra pegar acentuação e cabeçalho*/
+
+body{
+    background-color: greenyellow;
+    color: rgba(0, 0, 0, 1);
+}
+/* Comentário em CSS */
+/*background-color encima está definindo o fundo do site pra verde claro*/
+/*background-image: url("NomeDoArquivo.jpg"); = serve pra adicionar o fundo sendo o arquivo. Note que o arquivo precisa estar na mesma área do index*/
+/*color está defindo a cor da letra pra vermelhor */
+/*A cor pode ser escrita normalmente ( yellow, green, etc ), hexadecimal ( Ex : #a1d3ef ou a1 é a parte vermelha, d3 parte verde e ef parte azul), rgb(35, 137, 195) , rgba (0,0,0,0) onde o último 0 é transparência pode ser 0 até 1, hsl(M, S%, L%) = MatizSaturaçãoLuminosidade*, hsla ( M, S%, L%, A) onde A é Alpha */
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+figure.foto-legenda {
+/*Aqui está configurando as imagens do site que tem a classe foto-legenda*/
+    border: 8px solid red;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
