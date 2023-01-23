@@ -14,11 +14,36 @@ p{
     text-align: justify;
     text-indent: 50px;
 }
+
 figure.foto-legenda {
 /*Aqui está configurando as imagens do site que tem a classe foto-legenda*/
-    border: 8px solid red;
+    position: relative;
+    /*Posição no código HTML*/
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
 }
+
 figure.foto-legenda img{
     width: 100%;
     height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    /*Isso vai deixar com que o texto fique invisível*/
+    position: absolute;
+    /*Vai ficar na posição absoluta do seu pai o figure*/
+    top:0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    /*Espaçamento da legenda*/
+    box-sizing: border-box;
+    /*Corrige o salto pra fora do fundo*/
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
 }
