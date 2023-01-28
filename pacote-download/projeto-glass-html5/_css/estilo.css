@@ -168,6 +168,51 @@ section#corpo {
     border-right: 0.5px solid #606060;
 }
 
+table#tabelaspec {
+    border: 1px solid #606060;
+    /*Borda externa da tabela*/
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    /* Bordas de dentro*/
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    /* Palavra em Negrito */
+
+}
+    /* td.ce = Identifica uma tabela */
+    /* A classe se sobrepõe ao ID */
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color:#000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 asidade#lateral {
     display: block;
     width: 350px;
